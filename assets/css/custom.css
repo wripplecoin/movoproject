@@ -1,0 +1,521 @@
+.section-title {
+    margin-bottom: 30px;
+}
+
+.roadmap-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+    padding-left: 50px;
+    border-left: 3px solid #ccc;
+}
+
+.roadmap-item {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+.roadmap-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #b8d9fb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: -45px;
+}
+
+.roadmap-content {
+    margin-left: 30px;
+}
+
+.roadmap-content h6 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.roadmap-content ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.roadmap-content ul li {
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #555;
+}
+
+/**** General Styles ****/
+.ico-section {
+    background-color: #f9f9f9;
+    padding: 70px 0;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.bg-light {
+    background-color: #ffffff;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/**** Buttons ****/
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+.btn-outline-primary {
+    border: 1px solid #007bff;
+    color: #007bff;
+    background: transparent;
+    padding: 12px 24px;
+    font-size: 16px;
+}
+
+/**** Input Section ****/
+.input-group .form-control {
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.input-group .btn {
+    border-radius: 0 0.375rem 0.375rem 0;
+}
+
+/**** Progress Bar ****/
+.progress {
+    background-color: #e9ecef;
+    height: 10px;
+}
+
+.progress-bar {
+    background-color: #007bff;
+}
+
+/**** Responsive Design ****/
+@media (max-width: 768px) {
+    .ico-section {
+        padding: 50px 20px;
+    }
+
+    .ico-content {
+        text-align: center;
+    }
+
+    .ico-stats {
+        margin-top: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .iconbox {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .iconbox-icon-container {
+        margin-bottom: 10px;
+    }
+
+    .iconbox h3,
+    .iconbox p {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .comparison-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .comparison-grid-item {
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+}
+
+/* Bọc bảng trong container với cuộn ngang */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Mượt mà trên iOS */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 600px;
+    /* Đặt chiều rộng tối thiểu cho bảng nếu cần */
+}
+
+/* Thêm một số kiểu dáng để bảng trông đẹp hơn */
+table th,
+table td {
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    white-space: nowrap;
+    /* Ngăn chữ xuống dòng trong bảng */
+}
+
+thead th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+
+/* Responsive table wrapper */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    /* Smooth scrolling for iOS */
+    border-radius: 8px;
+    /* Rounded corners for the table */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow for professional look */
+    margin: 20px auto;
+    /* Center table with proper spacing */
+}
+
+/* Table styles */
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 600px;
+    /* Ensures table fits well */
+    color: #333;
+    background-color: #ffffff;
+    /* Light background */
+}
+
+/* Header styles */
+thead th {
+    background: linear-gradient(45deg, #900000, #ff4444);
+    /* Gradient red from the logo */
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 2px solid #700000;
+    /* Stronger border for header */
+}
+
+/* Body row styles */
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+    /* Light gray */
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ffffff;
+    /* White */
+}
+
+/* Base cell styles */
+tbody td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    /* Subtle border */
+}
+
+/* Highlight Movo Smart Chain column */
+tbody td:nth-child(2),
+thead th:nth-child(2) {
+    color: #09aeb0;
+    /* White text for readability */
+    font-weight: bold;
+}
+
+/* Highlight strengths in green */
+tbody td.font-bold {
+    color: #28a745;
+    /* Bright green for key strengths */
+    font-weight: bold;
+}
+
+/* Hover effect for rows */
+tbody tr:hover {
+    background-color: rgba(255, 68, 68, 0.1);
+    /* Light red on hover */
+    transition: background-color 0.3s ease;
+}
+
+/* Metric column styling */
+tbody td:first-child {
+    text-align: left;
+    font-weight: bold;
+    color: #555;
+    /* Neutral gray */
+}
+
+/* Responsive styling */
+@media only screen and (max-width: 768px) {
+    .comparison-table {
+        font-size: 13px;
+    }
+
+    thead th,
+    tbody td {
+        padding: 10px 15px;
+    }
+
+    .table-responsive {
+        border-radius: 5px;
+    }
+}
+
+/* Countdown Styling */
+.countdown-box {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007bff;
+    /* Primary color */
+    text-align: center;
+    background: #f8f9fa;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.countdown-box span {
+    color: #28a745;
+    /* Green for countdown numbers */
+}
+
+.countdown-box span:not(:last-child) {
+    margin-right: 5px;
+}
+
+/* Buy Form */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn {
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+
+.fundraising-details {
+    background-color: #f9fafc;
+}
+
+.fundraising-box {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border: 1px solid #e3e6ea;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 24px;
+    margin-bottom: 20px;
+    /* Added margin between boxes for mobile */
+}
+
+.fundraising-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.fundraising-box h4 {
+    color: #333333;
+    font-weight: 700;
+}
+
+.fundraising-box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.fundraising-box ul li {
+    margin-bottom: 16px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.fundraising-box ul li span {
+    font-weight: 600;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.text-muted {
+    color: #6c757d;
+}
+
+@media (max-width: 767px) {
+    .fundraising-box {
+        padding: 16px;
+        /* Adjust padding for smaller screens */
+        margin-bottom: 30px;
+        /* Extra spacing for mobile */
+    }
+}
+
+/**** General Styles ****/
+.ico-section {
+    background-color: #f9f9f9;
+    padding: 70px 0;
+}
+
+.text-primary {
+    color: #007bff;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.bg-light {
+    background-color: #ffffff;
+}
+
+.shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/**** Buttons ****/
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-outline-primary {
+    border: 1px solid #007bff;
+    color: #007bff;
+    background: transparent;
+    padding: 12px 24px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+/**** Input Section ****/
+.input-group .form-control {
+    border-radius: 0 0.375rem 0.375rem 0;
+    height: 50px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.input-group .btn {
+    border-radius: 0 0.375rem 0.375rem 0;
+    height: 50px;
+    width: 100px;
+    font-size: 16px;
+}
+
+/**** Progress Bar ****/
+.progress {
+    background-color: #e9ecef;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: #007bff;
+    transition: width 0.6s ease;
+}
+
+/**** Buy Button ****/
+.btn-hover-txt-switch {
+    display: inline-block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 24px;
+}
+
+.btn-hover-txt-switch:hover {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/**** Responsive Design ****/
+@media (max-width: 768px) {
+    .ico-section {
+        padding: 50px 20px;
+    }
+
+    .ico-content {
+        text-align: center;
+    }
+
+    .ico-stats {
+        margin-top: 30px;
+    }
+
+    .btn-primary,
+    .btn-outline-primary {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
